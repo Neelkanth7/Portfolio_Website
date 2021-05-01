@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Headland+One&display=swap");
 
+.maincontainer {
+  background-color: #f7f3e9;
+}
 .first {
   background-color: #f7f3e9;
   height: 100vh;
+  position: relative;
 }
 
 .second {
-  background-color: #3d84b8;
+  background-color: #e84545;
   height: 100vh;
 }
 
@@ -16,8 +20,16 @@
 }
 
 .fourth {
-  background-color: #7d5a5a;
+  background-color: #fce38a;
   height: 100vh;
+}
+
+.dp {
+  height: 30%;
+  width: 20%;
+  padding-left: 2vw;
+  padding-top: 2vh;
+  display: inline-block;
 }
 
 h1 {
@@ -27,6 +39,7 @@ h1 {
   padding-left: 15vw;
   padding-top: 5vw;
   overflow: hidden;
+  display: inline-block;
 }
 
 h1 .box {
