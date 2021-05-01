@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&display=swap");
+
+.first {
+  background-color: #f7f3e9;
+  height: 100vh;
+}
+
+.second {
+  background-color: #3d84b8;
+  height: 100vh;
+}
+
+.third {
+  background-color: #00b8a9;
+  height: 100vh;
+}
+
+.fourth {
+  background-color: #7d5a5a;
+  height: 100vh;
+}
+
+h1 {
+  position: relative;
+  font-family: "Headland One", serif;
+  font-size: 4vw;
+  padding-left: 15vw;
+  padding-top: 5vw;
+  overflow: hidden;
+}
+
+h1 .box {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  background: #3edbf0;
+  height: 0.5vw;
+  z-index: -1;
+}
+
+h1 .hi {
+  display: inline-block;
+}
+
+/* .playpic {
+  height: 200px;
+  width: 200px;
+  padding: 100px;
+}
+.circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  padding: auto;
+  text-align: center;
+} */
