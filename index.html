@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body  onResize="refresh()">
 
   
     <!-- <div id="play">
@@ -23,7 +23,7 @@
     <div class="circle" style="background-color: chartreuse;" ></div>
     <div class="circle" style="background-color: cyan;" ></div> -->
     <div class="maincontainer">
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #f7f3e9; " >
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #f7f3e9 " >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="images/logoPM.png" alt="" width="100" height="60">
@@ -38,6 +38,7 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#About">About</a>
+
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#Education">Education</a>
@@ -62,17 +63,64 @@
           <span class="text"></span>
           <span class="cursor">_</span>
           </h1>
+          
+         <svg id="path" viewBox="0 0 800 800">
+          <path id="track" d="M18,48 C162,631 459,84 991,182" 
+          style="stroke-width: 3;
+          fill:none;
+          stroke:black;"/>  </svg>
+         
 
+          
+           <img id="rect" src="images/paper-plane.svg" height="100px" width="100px" />
+            
+        
+       
+
+          
         </div>
 
         <div id="About" class="panel second">
-<h1>About</h1>
+         
+<h2 class="abouttitle">About</h2>
+
+
+<div class="about-div abpara">
+
+
+
+  <p > orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.
+   </p>
+  
+</div>
+
+
         </div>
+
+
+
+
         <div id="Education" class="panel third">
-<h1>Education</h1>
+<h2>Education</h2>
+<p class="edpara" >
+  orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.
+
+</p>
         </div>
+
+
+
+
+
+
         <div id="Projects" class="panel fourth">
-<h1>Projects</h1>
+<h2>Projects</h2>
+<p class="prpara">
+  orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat. Orci dapibus ultrices in iaculis. Augue neque gravida in fermentum et sollicitudin. Imperdiet sed euismod nisi porta lorem mollis aliquam ut. Morbi enim nunc faucibus a pellentesque sit. Amet justo donec enim diam vulputate. Et leo duis ut diam. Curabitur vitae nunc sed velit dignissim sodales. Nascetur ridiculus mus mauris vitae.
+ </p>
         </div>
 
       </div>
@@ -82,9 +130,11 @@
     
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/EasePack.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/EasePack.min.js"></script>
   <script src="app.js"></script>
 
 </body>

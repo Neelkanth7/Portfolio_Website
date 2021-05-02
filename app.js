@@ -1,8 +1,17 @@
 // gsap.to(".navbar" , {duration:2 , x:300 , backgroundColor : "#560563" , borderRadius : "20%" , border : "5px solid white" ,ease : "elastic" });
 
+function refresh() { location.reload(); }
+
+
+
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.registerPlugin(MotionPathPlugin);
+
+
 gsap.from(".navbar" , {duration :1 , opacity : 0 , x:150 , delay:0.5, stagger:0.25 })
+
+
 
 
 // Gsap
@@ -26,6 +35,46 @@ words.forEach(word => {
     masterTl.add(tl)
 })
 
+ScrollTrigger.create({
+  animation: gsap.fromTo(".abpara", {opacity:0}, {duration:1 ,opacity:1 } ) 
+  
+  ,
+  trigger:".second",
+  start :"top bottom",
+  
+  scrub:true,
+
+
+})
+
+
+
+
+ScrollTrigger.create({
+  animation: gsap.fromTo(".edpara", {xPercent: 100}, {xPercent:-30, duration: 0.5} )
+  
+  ,
+  trigger:".third",
+  start :"top bottom",
+  
+  scrub:true,
+
+
+})
+
+
+
+ScrollTrigger.create({
+  animation: gsap.fromTo(".prpara", {xPercent: -100}, {xPercent:30, duration: 0.5} )
+  
+  ,
+  trigger:".fourth",
+  start :"top bottom",
+  
+  scrub:true,
+
+
+})
 // const tl = gsap.timeline();
 
 // tl.to(".second" , {yPercent: -100})
@@ -64,3 +113,23 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
   
   
   
+
+gsap.to("#rect", {
+  scrollTrigger:{
+    trigger:".first",
+    start:"top top",
+    end:"center top",
+    immediateRender: true,
+
+
+    scrub:true,
+  },
+  duration: 1, 
+  ease: "none",
+  motionPath:{
+    path: "#track",
+    align: "#track",
+    autoRotate: true, //Rotates it according to the curvature of the path
+    alignOrigin: [0.5, 0.5]
+  }
+});
