@@ -35,46 +35,22 @@ words.forEach(word => {
     masterTl.add(tl)
 })
 
-ScrollTrigger.create({
-  animation: gsap.fromTo(".abpara", {opacity:0}, {duration:1 ,opacity:1 } ) 
-  
+const tl = gsap.timeline()
+tl.fromTo("#ncsuimg" , {yPercent : -100} , {yPercent : -60 , xPercent :100 ,duration : 0.5 })
+.fromTo(".aboutdetails", {opacity: 0}, {opacity: 2, duration: 1});
+
+
+
+ ScrollTrigger.create({
+ animation:  tl
   ,
-  trigger:".second",
-  start :"top bottom",
+   trigger:".second",
+   start :"bottom bottom",
   
-  scrub:true,
-
-
-})
 
 
 
-
-ScrollTrigger.create({
-  animation: gsap.fromTo(".edpara", {xPercent: 100}, {xPercent:-30, duration: 0.5} )
-  
-  ,
-  trigger:".third",
-  start :"top bottom",
-  
-  scrub:true,
-
-
-})
-
-
-
-ScrollTrigger.create({
-  animation: gsap.fromTo(".prpara", {xPercent: -100}, {xPercent:30, duration: 0.5} )
-  
-  ,
-  trigger:".fourth",
-  start :"top bottom",
-  
-  scrub:true,
-
-
-})
+ })
 // const tl = gsap.timeline();
 
 // tl.to(".second" , {yPercent: -100})
@@ -114,22 +90,24 @@ gsap.utils.toArray(".panel").forEach((panel, i) => {
   
   
 
-gsap.to("#rect", {
-  scrollTrigger:{
-    trigger:".first",
-    start:"top top",
-    end:"center top",
-    immediateRender: true,
+// gsap.to("#rects", {
+//   scrollTrigger:{
+//     trigger:".first",
+//     start:"top top",
+//     end:"center top",
+   
 
 
-    scrub:true,
-  },
-  duration: 1, 
-  ease: "none",
-  motionPath:{
-    path: "#track",
-    align: "#track",
-    autoRotate: true, //Rotates it according to the curvature of the path
-    alignOrigin: [0.5, 0.5]
-  }
-});
+//     scrub:true,
+//   },
+//   duration: 1, 
+//   ease: "none",
+//   motionPath:{
+//     path: "#track",
+//     align: "#track",
+//     autoRotate: true, //Rotates it according to the curvature of the path
+//     alignOrigin: [0.5, 0.5]
+//   }
+// });
+
+
